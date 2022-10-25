@@ -8,5 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
+// project level controller
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
