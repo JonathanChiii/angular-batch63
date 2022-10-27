@@ -15,6 +15,10 @@ import { UserComponent } from './user/user.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     UserComponent,
     UserAddComponent,
     UserDetailsComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    EmployeeComponent,
+    EmployeeDetailsComponent,
+    EmployeeAddComponent,
+    EmployeeUpdateComponent
   ],
   imports: [
     BrowserModule,

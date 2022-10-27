@@ -1,0 +1,31 @@
+<p>employee works!</p>
+
+
+<h2> Employee content</h2>
+
+<a routerLink="/employee/add" class="btn btn-secondary">Add New Employee</a>
+
+<table class="table table-stripped table-dark">
+    <thead>
+        <tr>
+            <td>#SNO</td>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Salary</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employeeList; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.salary}}</td>
+            <td>
+                <a [routerLink]="['/employee/', employee.id]">View Details</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

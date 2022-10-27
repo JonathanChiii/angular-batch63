@@ -1,0 +1,65 @@
+<p>reactive-form works!</p>
+<div style="text-align: left;">
+    <form [formGroup]="userForm">
+
+
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" formControlName="name" [(ngModel)]="user.name">
+            <div *ngIf="submitted && f.name.errors" class="alert alert-danger" role="alert">
+                Name is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" formControlName="email" [(ngModel)]="user.email">
+            <div class="alert alert-danger" role="alert" *ngIf="submitted && f.email.errors">
+                <div *ngIf="submitted && f.email.errors.required">
+                    Email is required
+                </div>
+                <div *ngIf="submitted && f.email.errors.email" class="alert alert-danger" role="alert">
+                    Email is not valid
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="username">UserName</label>
+            <input type="text" class="form-control" formControlName="username" [(ngModel)]="user.username">
+            <div class="alert alert-danger" role="alert" *ngIf="submitted && f.email.errors">
+                <div *ngIf="submitted && f.username.errors.required" class="alert alert-danger" role="alert">
+                    User Name is required
+                </div>
+                <div *ngIf="submitted && f.username.errors.minlength" class="alert alert-danger" role="alert">
+                    User Name must be at least 5 characor long.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="phone">phone</label>
+            <input type="text" class="form-control" formControlName="phone" [(ngModel)]="user.phone">
+            <div class="alert alert-danger" role="alert" *ngIf="submitted && f.phone.errors">
+                
+                    Phone is required
+                
+               
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="website">WebSite</label>
+            <input type="text" class="form-control" formControlName="website" [(ngModel)]="user.website">
+            <div *ngIf="submitted && f.website.errors" class="alert alert-danger" role="alert">
+                WebSite is required
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)=addUser()>Submit</button>
+        <button type="reset" class="btn btn-secondary" (click)=reset()>Clear</button>
+    </form>
+</div>
