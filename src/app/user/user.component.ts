@@ -1,4 +1,6 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { User } from '../Model/User';
 
 @Component({
   selector: 'app-user',
@@ -8,8 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
 
   message:string = "Hello Everyone";
- 
-  constructor() { }
+  userList:User[]=[];
+
+  constructor(private http:HttpClient) {
+    http.get("https://jsonplaceholder.typicode.com/users").subscribe(result => console.log(result));
+  }
 
   ngOnInit(): void {
   }
