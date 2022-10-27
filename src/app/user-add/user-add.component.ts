@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../Model/User';
 
 @Component({
   selector: 'app-user-add',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserAddComponent implements OnInit {
 
+  user:User = new User;
+  submitted:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  addUser():void{
+    this.submitted=true;
+    console.log(this.user);
+  }
 }
