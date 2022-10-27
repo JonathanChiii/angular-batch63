@@ -10,6 +10,8 @@ import { SupportComponent } from './support/support.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserComponent } from './user/user.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch:"full"},
@@ -25,7 +27,7 @@ const routes: Routes = [
     {path:"employee", component:EmployeesupportComponent},
     {path:"customer", component:CustomersupportComponent}
   ]},
-
+  {path: 'reactiveform', component: ReactiveFormComponent }
 ];
 
 @NgModule({

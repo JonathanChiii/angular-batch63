@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +14,7 @@ import { SupportComponent } from './support/support.component';
 import { UserComponent } from './user/user.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,15 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     SupportComponent,
     UserComponent,
     UserAddComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [HomeComponent] // this is the root component we work with
