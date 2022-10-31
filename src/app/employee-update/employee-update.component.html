@@ -1,1 +1,31 @@
 <p>employee-update works!</p>
+<div style="text-align: left;">
+    <form>
+
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class = "form-control" name="name" [(ngModel)]="employeeDetail.name">
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="text" class = "form-control" name="email" [(ngModel)]="employeeDetail.email">
+        </div>
+
+        <div class="form-group">
+            <label for="Salary">salary</label>
+            <input type="text" class = "form-control" name="salary" [(ngModel)]="employeeDetail.salary">
+        </div>
+
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="text" class = "form-control" name="password" [(ngModel)]="employeeDetail.password">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" (click)=updateEmployee()>Update</button>
+
+    </form>
+
+
+</div>

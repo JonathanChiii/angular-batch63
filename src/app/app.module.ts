@@ -23,6 +23,7 @@ import { DataBindingComponent } from './databinding/databinding.component';
 import { EventBindingComponent } from './databinding/event-binding/event-binding.component';
 import { PropertyBindingComponent } from './databinding/property-binding/property-binding.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     EventBindingComponent,
     PropertyBindingComponent,
     LifecycleComponent,
+    EmployeeDeleteComponent,
 
   ],
   imports: [

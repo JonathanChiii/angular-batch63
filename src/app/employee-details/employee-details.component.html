@@ -25,6 +25,18 @@
                 <td>{{employeeDetail.password}}</td>
             </tr>
             
+            
+            
+            <!--
+                <td>
+                    <button type="post" class="btn btn-primary" (click) = employeeService.deleteEmployee(employeeDetail.id)>Delete Employee</button>
+                </td>
+            -->
+                <td>
+                    <a [routerLink]="['/employee/edit/', employeeDetail.id]">Edit</a>
+                </td>
+            
         </table>
+        <app-employee-delete></app-employee-delete>
     </div>
 </div>

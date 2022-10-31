@@ -23,4 +23,17 @@ export class EmployeeService {
     return this.http.post<Employee>("http://localhost:8081/save/", employee);
     //console.log(employee);
   }
+
+  deleteEmployee(id:number):Observable<number>{
+    console.log(id);
+    alert("Deleted " + id);
+    return this.http.delete<number>("http://localhost:8081/delete/" + id);
+    //console.log(employee);
+  }
+  
+  updateEmployee(employee:Employee):Observable<Employee>{
+    console.log(employee);
+    return this.http.post<Employee>("http://localhost:8081/update/", employee);
+  }
+
 }

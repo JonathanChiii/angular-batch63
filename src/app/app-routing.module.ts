@@ -15,6 +15,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { DataBindingComponent } from './databinding/databinding.component';
+import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
+import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch:"full"},
@@ -34,6 +36,9 @@ const routes: Routes = [
   {path: "employee",component:EmployeeComponent},
   {path: "employee/add",component:EmployeeAddComponent},
   {path:"employee/:id", component:EmployeeDetailsComponent},
+  {path:"employee/delete/:id", component:EmployeeDeleteComponent},
+  {path:"employee/edit/:id", component:EmployeeUpdateComponent},
+
   {path:"databinding", component:DataBindingComponent},
 ];
 
