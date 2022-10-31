@@ -14,6 +14,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { DataBindingComponent } from './databinding/databinding.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch:"full"},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: "employee",component:EmployeeComponent},
   {path: "employee/add",component:EmployeeAddComponent},
   {path:"employee/:id", component:EmployeeDetailsComponent},
+  {path:"databinding", component:DataBindingComponent},
 ];
 
 @NgModule({
