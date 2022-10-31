@@ -19,6 +19,10 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
+import { DataBindingComponent } from './databinding/databinding.component';
+import { EventBindingComponent } from './databinding/event-binding/event-binding.component';
+import { PropertyBindingComponent } from './databinding/property-binding/property-binding.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,12 @@ import { EmployeeUpdateComponent } from './employee-update/employee-update.compo
     EmployeeComponent,
     EmployeeDetailsComponent,
     EmployeeAddComponent,
-    EmployeeUpdateComponent
+    EmployeeUpdateComponent,
+    DataBindingComponent,
+    EventBindingComponent,
+    PropertyBindingComponent,
+    LifecycleComponent,
+
   ],
   imports: [
     BrowserModule,

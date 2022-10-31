@@ -1,0 +1,13 @@
+<p>data-binding works!</p>
+<h1 [ngClass] = '{redBorder:true}'>Welcome to data binding</h1>
+            <p [ngStyle] = "{color: 'green'}"> This is also Style</p>
+            <hr/> Custome property binding<br/>
+            <app-property-binding [result] = '2000'></app-property-binding>
+<h3>Event Binding</h3>
+<button (click) = "sayHello()">Click here</button>
+
+<!-- [] property binding
+     () event binding
+-->
+<h3>Custome Event Binding</h3>
+<app-event-binding (clickable) = "onClickedEvent($event)"> </app-event-binding>
