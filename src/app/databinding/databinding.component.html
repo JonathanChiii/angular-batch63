@@ -9,12 +9,17 @@
 <!-- [] property binding
      () event binding
 -->
-<h3>Custome Event Binding</h3>
-<app-event-binding (clickable) = "onClickedEvent($event)"> </app-event-binding>
+<h3>Custom Event Binding</h3>
+<app-event-binding (clickable) = "parentEvent($event)"> </app-event-binding>
 
-<app-lifecycle>
+<app-lifecycle *ngIf="!delete" [bindable] = "boundValue">
      <p>in the lifecycle component</p>
      <!-- to be passed into the component
           <ng-content> will pass the value
      -->
+     <p>{{test}}</p>
 </app-lifecycle>
+
+<button (click) = 'delete=true'>Click to Delete</button>
+<button (click) = "test= 'Changed value'">Click to change the value</button>
+<button (click) = 'boundValue=500'>Click to change the binding</button>

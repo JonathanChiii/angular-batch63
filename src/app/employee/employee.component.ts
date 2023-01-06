@@ -10,6 +10,7 @@ import { Employee } from '../Model/Employee';
 export class EmployeeComponent implements OnInit {
 
   employeeList:any;
+  name = "Employee";
 
   constructor(private _empService:EmployeeService) {
     this._empService.getAllEmployee().subscribe(result=>{

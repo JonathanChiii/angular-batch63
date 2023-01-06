@@ -20,4 +20,9 @@ describe('EmployeeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('testing title', () => {
+    expect(component.name).toEqual("Employee123");
+  });
+
 });

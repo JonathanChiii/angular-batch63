@@ -42,13 +42,12 @@ import { EmployeeDeleteComponent } from './employee-delete/employee-delete.compo
     EmployeeComponent,
     EmployeeDetailsComponent,
     EmployeeAddComponent,
+    EmployeeDeleteComponent,
     EmployeeUpdateComponent,
     DataBindingComponent,
     EventBindingComponent,
     PropertyBindingComponent,
     LifecycleComponent,
-    EmployeeDeleteComponent,
-
   ],
   imports: [
     BrowserModule,

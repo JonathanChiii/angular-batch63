@@ -17,6 +17,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { DataBindingComponent } from './databinding/databinding.component';
 import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
 import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
+import { PropertyBindingComponent } from './databinding/property-binding/property-binding.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch:"full"},
@@ -40,6 +42,8 @@ const routes: Routes = [
   {path:"employee/edit/:id", component:EmployeeUpdateComponent},
 
   {path:"databinding", component:DataBindingComponent},
+  {path:"propertybinding", component:PropertyBindingComponent},
+  {path:'lifecycle', component:LifecycleComponent},
 ];
 
 @NgModule({

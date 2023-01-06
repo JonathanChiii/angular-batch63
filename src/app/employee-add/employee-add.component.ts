@@ -24,4 +24,5 @@ export class EmployeeAddComponent implements OnInit {
     this.submitted=true;
     alert("Employe has been saved, your Id is: " + this.employee.id);
   }
+  
 }

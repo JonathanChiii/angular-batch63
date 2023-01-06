@@ -13,7 +13,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./databinding.component.css']
 })
 export class DataBindingComponent implements OnInit {
-
+  test:string="Starting value from test";
+  boundValue:number = 2000;
+  delete:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -23,8 +25,8 @@ export class DataBindingComponent implements OnInit {
     alert("hello");
   }
 
-  onClickedEvent(value:string){
-    alert(value + " From data binding function");
+  parentEvent(value:string){
+    alert(value + "  from parent event");
   }
 
 }

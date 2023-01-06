@@ -7,8 +7,8 @@ import { Component, OnInit , Input} from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
-  //import decoritor
-  @Input()result:number = 0;
+  //import decorator
+  @Input() result:number = 0;
   constructor() { }
 
   ngOnInit(): void {

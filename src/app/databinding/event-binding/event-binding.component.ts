@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'app-event-binding',
   //templateUrl: './event-binding.component.html',
-  template: `<button (click) = 'onClickedEvent()'> Custom event Click</button>`,
+  template: `<button (click) = 'childEvent()'> Custom event Click</button>`,
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent implements OnInit {
@@ -15,8 +15,8 @@ export class EventBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClickedEvent():void{
-    alert("Event binding worked from event bindind!");
-    this.clicked.emit('$event custom event fired'); // trigger custom event
+  childEvent():void{
+    //alert("Custom child event");
+    this.clicked.emit('Clicked emited.'); // trigger custom event
   }
 }
